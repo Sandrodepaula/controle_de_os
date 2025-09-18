@@ -6,9 +6,11 @@ const fs = require("fs");
 const app = express();
 app.use(bodyParser.json());
 
+const token = "SEU_TOKEN_AQUI"; // Token do WhatsApp Business API
+
 // Arquivo da planilha
 const FILE_PATH = "dados.xlsx";
-const VERIFY_TOKEN = "minha_senha_secreta"; // Defina a mesma no painel da Meta
+const VERIFY_TOKEN = "sandrodev1!"; // Defina a mesma no painel da Meta
 
 // Função para salvar dados na planilha
 function salvarNaPlanilha(dados) {
